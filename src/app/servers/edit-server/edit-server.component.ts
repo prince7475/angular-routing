@@ -26,7 +26,6 @@ export class EditServerComponent implements OnInit {
       this.serverStatus = this.server.status;
     })
     this.route.queryParams.subscribe((query: Params) => {
-      console.log(`query`, query)
       const result =(query.allowEdit === '1') ? true : false 
       this.allowEdit = result
     })
